@@ -12,7 +12,8 @@ class QueryParser {
             }
          } else if (
             typeof query[key] === 'object' &&
-            !Array.isArray(query[key])
+            !Array.isArray(query[key]) &&
+            (query[key] !== null || query[key] === undefined)
          ) {
             const fieldValue = this.getNestedValue(doc, key)
             if (!this.handleFieldOperators(fieldValue, query[key])) {

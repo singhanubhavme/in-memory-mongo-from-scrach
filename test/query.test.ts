@@ -203,7 +203,7 @@ describe('QueryParser', () => {
    test('should handle null values in documents', () => {
       const query = { name: null, age: null }
       expect(QueryParser.match(doc6, query)).toBe(true)
-      //   expect(QueryParser.match(doc1, query)).toBe(false)
+      expect(QueryParser.match(doc1, query)).toBe(false)
    })
 
    test('should handle array fields with $in operator', () => {
