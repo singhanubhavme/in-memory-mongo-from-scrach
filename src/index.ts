@@ -15,3 +15,5 @@ export {
    IdGenerator,
    Document,
 }
+
+export default Database
