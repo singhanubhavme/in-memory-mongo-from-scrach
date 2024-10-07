@@ -9,10 +9,10 @@
       "allowSyntheticDefaultImports": true,
       "importHelpers": true, // to use tslib (make it false to remove tslib from dependency)
       "alwaysStrict": true,
-      // "sourceMap": true,
+      "sourceMap": false,
       "forceConsistentCasingInFileNames": true,
       "noFallthroughCasesInSwitch": true,
-      // "noImplicitReturns": true,
+      "noImplicitReturns": true,
       "noUnusedLocals": false,
       "noUnusedParameters": false,
       "noImplicitAny": false,
